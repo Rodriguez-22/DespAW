@@ -2,7 +2,7 @@ services:
   web:
     build: # compilar la imagen a partir de un Dockerfile
       context: . # raiz del proyecto
-      dockerfile: deploy/Dockerfile
+      dockerfile: Dockerfile
     container_name: CTportfolio
     ports:
       - "8833:80"
