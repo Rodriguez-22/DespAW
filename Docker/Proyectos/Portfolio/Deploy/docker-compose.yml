@@ -1,11 +1,8 @@
 services:
   web:
-    build: 
-      context: ..
+    build: # compilar la imagen a partir de un Dockerfile
+      context: .. # raiz del proyecto
       dockerfile: deploy/Dockerfile
-      args: 
-        - USUARIO=pepe
-        - PASSWORD=1234
-    container_name: ctportfolio
+    container_name: CTportfolio
     ports:
-      - "8810:80"
+      - "8833:80"
