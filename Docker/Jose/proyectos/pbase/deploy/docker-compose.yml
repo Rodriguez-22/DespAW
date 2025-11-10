@@ -3,4 +3,6 @@ services:
     build:
       #ruta a través de la cual desde cualquier proyecto
       #se tiene acceso a cualquier imagen (DFile), recurso
-      context: 
+      context: /home/jose/devops/DespAW/Docker/Jose
+      dockerfile: ./dockerfiles/base/ubuntu/Dockerfile
+    container_name: ctbaseDAW
