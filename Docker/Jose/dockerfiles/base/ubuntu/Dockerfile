@@ -18,4 +18,4 @@ WORKDIR /root/base/ubuntu/admin
 COPY ./dockerfiles/base/ubuntu/admin .
 RUN chmod o+x ./start.sh
 
-ENTRYPOINT [ "executable" ]
+ENTRYPOINT [ "./start.sh" ]
