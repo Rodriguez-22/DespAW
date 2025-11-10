@@ -5,4 +5,4 @@ services:
       #se tiene acceso a cualquier imagen (DFile), recurso
       context: /home/jose/devops/DespAW/Docker/Jose
       dockerfile: ./dockerfiles/base/ubuntu/Dockerfile
-    container_name: ctbaseDAW
+    container_name: ct-base-DAW
