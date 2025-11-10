@@ -1,4 +1,4 @@
-#!/bin/Bash
+#!/bin/bash
 
 newUser() {
     useradd -rm -d /home/jose -s /bin/bash jose
