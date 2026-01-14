@@ -3,10 +3,9 @@ services:
     build:
       context: ../
       dockerfile: ./deploy/Dockerfile
-      args:
-        PROYECTO: ${PROYECTO}
-        USUARIO: ${USUARIO}
-        TIPO: ${TIPO}
+    image: ptaller_apache:latest
+    container_name: ptaller_apache
+    volumes:
+      - ./logs:/root/logs
     ports:
       - "8080:80"
-    container_name: ptaller_apache
